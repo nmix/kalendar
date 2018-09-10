@@ -4,8 +4,17 @@
 
 ## Установка
 
+
+
 ```bash
-gem install kalendar
+gem install specific_install
+gem specific_install -l nmix/kalendar
+```
+
+или Gemfile
+
+```ruby
+gem 'kalendar', :github => 'nmix/kalendar'
 ```
 
 ## Использование
