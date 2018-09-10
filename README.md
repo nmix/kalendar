@@ -83,13 +83,10 @@ end
 Использование
 
 ```ruby
-# work days
+# рабочие дни
 Date.new(2018, 1, 1).end_term(1, :work_days).to_s
 => "2018-01-09"
-# deprecated
-Date.new(2018, 1, 1).after_working_days(1).to_s
-=> "2018-01-09"
-# calendar days
+# календарные дни
 Date.new(2018, 1, 1).end_term(1, :calendar_days).to_s
 => "2018-01-02"
 ```
