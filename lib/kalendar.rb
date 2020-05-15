@@ -20,6 +20,16 @@ class Kalendar
     @base_date = base_date
   end
 
+  # Working days till date
+  # @return [Integer]
+  def working_days_till(target_date)
+    return 0 if target_date <= @base_date
+
+    (@base_date..target_date).to_a.reject do |d|
+      Kalendar.holiday?(d)
+    end.count - 1
+  end
+
   # Next working day after current
   # @return [Date]
   def next_work_day

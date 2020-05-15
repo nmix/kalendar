@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kalendar (0.0.0)
+    kalendar (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -29,4 +29,4 @@ DEPENDENCIES
   rspec (~> 3.7)
 
 BUNDLED WITH
-   1.16.4
+   1.17.2
