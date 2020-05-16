@@ -22,7 +22,7 @@ class Kalendar
 
   # Working days till date
   # @return [Integer]
-  def working_days_till(target_date)
+  def work_days_till(target_date)
     return 0 if target_date <= @base_date
 
     (@base_date..target_date).to_a.reject do |d|
@@ -30,7 +30,7 @@ class Kalendar
     end.count - 1
   end
 
-  # Next working day after current
+  # Next work day after current
   # @return [Date]
   def next_work_day
     target_day = @base_date + 1
@@ -57,7 +57,7 @@ class Kalendar
 
   class << self
 
-    # Specify fixed working days hash
+    # Specify fixed work days hash
     # @param days [Hash] year-days hash
     #   ex: {
     #     2018 => '01.01-10.01 23.02 8.3'

@@ -33,10 +33,10 @@ RSpec.describe Kalendar do
     Kalendar.reset!
   end
 
-  describe '#working_days_till' do
-    it { expect(kalendar.working_days_till(d('06.09.2018'))).to eq(3) }
+  describe '#work_days_till' do
+    it { expect(kalendar.work_days_till(d('06.09.2018'))).to eq(3) }
 
-    it { expect(kalendar.working_days_till(d('10.09.2018'))).to eq(5) }
+    it { expect(kalendar.work_days_till(d('10.09.2018'))).to eq(5) }
   end
 
   describe '#next_work_day' do
